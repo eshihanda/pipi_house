@@ -1,0 +1,19 @@
+.nav-link-custom {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav-link-custom:hover,
+.dropdown-menu .dropdown-item:hover {
+    color:#FFD700;
+}
+.custom-dropdown .dropdown-menu {
+  background-color: #556B2F;
+  border-radius: 10px;
+  border: none
+}
+
+.custom-dropdown .dropdown-item {
+  color: #fff;
+  font-weight: 500;
+}

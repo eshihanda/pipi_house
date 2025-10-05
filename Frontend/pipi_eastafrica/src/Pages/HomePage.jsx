@@ -3,6 +3,7 @@ import HeroSection from '../Components/HeroSection'
 import Faq from '../Components/Faq'
 import Footer from '../Components/Footer'
 import ProductExplorer from '../Components/product-explorer'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 const HomePage = () => {
   return (

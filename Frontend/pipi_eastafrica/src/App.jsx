@@ -33,7 +33,7 @@ const App = () => {
               <CerealsPage />
             </div>} 
         />
-        <Route path='/about-us' 
+        <Route path='/about' 
           element={
             <div className='container mt-4'>
               <AboutPage />

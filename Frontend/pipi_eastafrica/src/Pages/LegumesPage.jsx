@@ -5,11 +5,11 @@ import avocados from '../assets/avocados(2).jpeg';
 import mangoes from '../assets/mangoes(3).jpeg';
 
 import { Link } from 'react-router-dom'
-const FruitsPage = () => {
+const LegumesPage = () => {
   return (
     <div className='fruits-page'>
       <div className='header'>
-        <h2 className='header-title'>Fresh Tropical Fruits</h2>
+        <h2 className='header-title'>Nutritious Legumes</h2>
       </div>
       <div className='container'>
         <div className='fruit-item'>
@@ -50,4 +50,4 @@ const FruitsPage = () => {
   )
 }
 
-export default FruitsPage
+export default LegumesPage;

@@ -4,10 +4,10 @@ import HomePage from './Pages/HomePage'
 import Products from './Pages/Products'
 import ContactPage from './Pages/ContactPage'
 import CerealsPage from './Pages/CerealsPage'
+import LegumesPage from './Pages/LegumesPage'
 import AboutPage from './Pages/AboutPage'
+import FruitsPage from './Pages/FruitsPage'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-
-
 const App = () => {
   return (
     <Router>
@@ -16,18 +16,18 @@ const App = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='/products' 
           element={
-            <div className='container mt-4'>
+            <div>
               <Products />
             </div>
           } 
         />
         <Route path='/contact' 
           element={
-            <div className='container mt-4'>
+            <div>
               <ContactPage />
             </div>} 
         />
-        <Route path='/cereals' 
+        <Route path='/about-us'
           element={
             <div className='container mt-4'>
               <CerealsPage />
@@ -39,8 +39,24 @@ const App = () => {
               <AboutPage />
             </div>} 
         />
-
-        
+        <Route path='/products/fruits' 
+          element={
+            <div>
+              <FruitsPage />
+            </div>} 
+        />
+        <Route path='/products/cereals' 
+          element={
+            <div>
+              <CerealsPage />
+            </div>} 
+        />
+        <Route path='/products/legumes' 
+          element={
+            <div>
+              <LegumesPage />
+            </div>} 
+        />
       </Routes>
     </Router>
   )

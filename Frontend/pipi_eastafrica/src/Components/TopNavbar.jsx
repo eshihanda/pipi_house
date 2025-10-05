@@ -12,9 +12,9 @@ const TopNavbar = () => {
           <Nav className='mx-auto'>
             <Nav.Link href='/' className='nav-link-custom'>Home</Nav.Link>
             <NavDropdown title='Our Products' id='products-dropdown' className='nav-link-custom custom-dropdown'>
-              <NavDropdown.Item href='/cereals'>Cereals</NavDropdown.Item>
-              <NavDropdown.Item href='/fruits'>Fruits</NavDropdown.Item>
-              <NavDropdown.Item href='/nuts'>Nuts</NavDropdown.Item>
+              <NavDropdown.Item href='/products/cereals'>Cereals</NavDropdown.Item>
+              <NavDropdown.Item href='/products/fruits'>Fruits</NavDropdown.Item>
+              <NavDropdown.Item href='/products/legumes'>Legumes</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/contact' className='nav-link-custom'>Contact</Nav.Link>
             <Nav.Link href='/about' className='nav-link-custom'>About Us</Nav.Link>

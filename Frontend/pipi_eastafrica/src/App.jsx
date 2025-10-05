@@ -29,7 +29,13 @@ const App = () => {
         />
         <Route path='/about-us'
           element={
-            <div>
+            <div className='container mt-4'>
+              <CerealsPage />
+            </div>} 
+        />
+        <Route path='/about' 
+          element={
+            <div className='container mt-4'>
               <AboutPage />
             </div>} 
         />

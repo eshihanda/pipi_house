@@ -17,6 +17,7 @@ const TopNavbar = () => {
               <NavDropdown.Item href='/products/legumes'>Legumes</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/contact' className='nav-link-custom'>Contact</Nav.Link>
+            <Nav.Link href='/about' className='nav-link-custom'>About Us</Nav.Link>
           </Nav>
           <Nav className='ms-auto'>    
             <Button href='/products' className='px-3 py-2 fw-semibold' 

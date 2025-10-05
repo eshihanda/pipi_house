@@ -32,6 +32,10 @@ p{
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s, box-shadow 0.3s ease;
 	height: 350px;
+	text-decoration: none; 
+    display: block; 
+    color: inherit;
+
 }
 
 .category-card:hover{

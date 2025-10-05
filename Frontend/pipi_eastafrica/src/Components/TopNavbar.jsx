@@ -12,14 +12,14 @@ const TopNavbar = () => {
           <Nav className='mx-auto'>
             <Nav.Link href='/' className='nav-link-custom'>Home</Nav.Link>
             <NavDropdown title='Our Products' id='products-dropdown' className='nav-link-custom custom-dropdown'>
-              <NavDropdown.Item href='/serials'>Serials</NavDropdown.Item>
-              <NavDropdown.Item href='/fruits'>Fruits</NavDropdown.Item>
-              <NavDropdown.Item href='/nuts'>Nuts</NavDropdown.Item>
+              <NavDropdown.Item href='/products/cereals'>Cereals</NavDropdown.Item>
+              <NavDropdown.Item href='/products/fruits'>Fruits</NavDropdown.Item>
+              <NavDropdown.Item href='/products/legumes'>Legumes</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href='/' className='nav-link-custom'>Contact</Nav.Link>
+            <Nav.Link href='/contact' className='nav-link-custom'>Contact</Nav.Link>
           </Nav>
-          <Nav className='ms-auto'>
-            <Button href='our-products' className='px-3 py-2 fw-semibold' 
+          <Nav className='ms-auto'>    
+            <Button href='/products' className='px-3 py-2 fw-semibold' 
             style={{borderRadius: '20px', backgroundColor:'#DAA520', border: 'none', color: '#333'}}>
               Shop Now
             </Button>

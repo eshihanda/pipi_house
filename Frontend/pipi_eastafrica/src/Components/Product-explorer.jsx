@@ -1,5 +1,6 @@
 import React from "react";
 import '../Styles/ProductExplorer.css';
+import { Link } from "react-router-dom";
 import tropicalFruits from '../assets/tropical-fruits.png';
 import legumes from '../assets/legumes.png';
 import vegetables from '../assets/cashewnuts.jpeg';
@@ -11,7 +12,7 @@ const ProductExplorer = () => {
 			<h2>Explore Our Products</h2>
 			<p>Explore our diverse range of products tailored for your needs.</p>
 			<div className="product-categories">
-				<div className="category-card">
+				<Link to="products/fruits" className="category-card">
 					<div className="category-image" style={{backgroundImage: `url(${tropicalFruits})`}}>
 						<div className="category-overlay">
 							<div className="category-content">
@@ -20,8 +21,8 @@ const ProductExplorer = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="category-card">
+				</Link>
+				<Link to="products/legumes" className="category-card">
 					<div className="category-image" style={{backgroundImage: `url(${legumes})`}}>
 						<div className="category-overlay">
 							<div className="category-content">
@@ -30,8 +31,8 @@ const ProductExplorer = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="category-card">
+				</Link>
+				<Link to="products/Cereals" className="category-card">
 					<div className="category-image" style={{backgroundImage: `url(${vegetables})`}}>
 						<div className="category-overlay">
 							<div className="category-content">
@@ -40,7 +41,7 @@ const ProductExplorer = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</Link>
 			</div>
 		</div>
 	);

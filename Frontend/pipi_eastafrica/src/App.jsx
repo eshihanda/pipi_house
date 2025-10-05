@@ -1,17 +1,58 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import TopNavbar from './Components/TopNavbar'
-import Faq from './Components/Faq'
-import Footer from './Components/Footer'
-import ProductExplorer from './Components/product-explorer'
+import HomePage from './Pages/HomePage'
+import Products from './Pages/Products'
+import ContactPage from './Pages/ContactPage'
+import CerealsPage from './Pages/CerealsPage'
+import LegumesPage from './Pages/LegumesPage'
+import AboutPage from './Pages/AboutPage'
+import FruitsPage from './Pages/FruitsPage'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 const App = () => {
   return (
-    <div>
+    <Router>
       <TopNavbar />
-      <ProductExplorer />
-      <Faq />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/products' 
+          element={
+            <div>
+              <Products />
+            </div>
+          } 
+        />
+        <Route path='/contact' 
+          element={
+            <div>
+              <ContactPage />
+            </div>} 
+        />
+        <Route path='/about-us'
+          element={
+            <div>
+              <AboutPage />
+            </div>} 
+        />
+        <Route path='/products/fruits' 
+          element={
+            <div>
+              <FruitsPage />
+            </div>} 
+        />
+        <Route path='/products/cereals' 
+          element={
+            <div>
+              <CerealsPage />
+            </div>} 
+        />
+        <Route path='/products/legumes' 
+          element={
+            <div>
+              <LegumesPage />
+            </div>} 
+        />
+      </Routes>
+    </Router>
   )
 }
 export default App

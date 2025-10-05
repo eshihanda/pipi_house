@@ -1,11 +1,9 @@
 import React from 'react'
-import {FaFacebook, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import '../Styles/Footer.css'
 
 const Footer = () => {
   return (
-    <>
-    <div className='container footer-border'></div>
-    <footer className='mt-3 pt-5 pb-3 text-white' style={{backgroundColor: '#556B2F'}}>
+    <footer className='mt-3 pt-5 pb-3 text-white footer' style={{backgroundColor: '#556B2F'}}>
         <div className='container'>
             <div className='row text-center text-md-start'>
                 <div className='col-md-4 mb-4'>
@@ -34,7 +32,6 @@ const Footer = () => {
             <p className='text-center'>Handcrafted by yours truly; Monica and the team</p>
         </div>
     </footer>
-    </>
   )
 }
 

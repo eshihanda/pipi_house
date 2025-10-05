@@ -7,6 +7,7 @@ import CerealsPage from './Pages/CerealsPage'
 import AboutPage from './Pages/AboutPage'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
+
 const App = () => {
   return (
     <Router>
@@ -32,7 +33,7 @@ const App = () => {
               <CerealsPage />
             </div>} 
         />
-        <Route path='/about-us' 
+        <Route path='/about' 
           element={
             <div className='container mt-4'>
               <AboutPage />

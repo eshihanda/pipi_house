@@ -20,7 +20,7 @@ const ContactHeroSection = () => {
             <div>
               <p className="m-0 fw-semibold">
                 <span className="d-block">Give us a call:</span>
-                <span className="fs-5 text-success">1-800-123-1234</span>
+                <span className="fs-5 text-success">+254721840512</span>
               </p>
             </div>
           </div>

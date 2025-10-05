@@ -24,13 +24,13 @@
 }
 
 .btn-success {
-  background-color: #556B2F !important;
+  background-color: #556B2F;
   border: none;
   transition: background-color 0.3s ease;
 }
 
 .btn-success:hover {
-  background-color: #6B8E23 !important;
+  background-color: #6B8E23;
 }
 
 /* Responsive adjustments */

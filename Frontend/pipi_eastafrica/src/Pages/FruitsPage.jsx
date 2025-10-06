@@ -3,6 +3,8 @@ import '../Styles/FruitsPage.css'
 import pineapple from '../assets/pineapple(2).jpeg';
 import avocados from '../assets/avocados(2).jpeg';
 import mangoes from '../assets/mangoes(3).jpeg';
+import bananas from '../assets/banana.webp';
+import passion from '../assets/passion-fruit.webp';
 
 import { Link } from 'react-router-dom'
 const FruitsPage = () => {
@@ -32,13 +34,13 @@ const FruitsPage = () => {
         </div>
         <div className='fruit-item'>
           <div className='fruit-content'>
-            <img src={pineapple} alt="Banana" className='fruit-image' />
+            <img src={bananas} alt="Banana" className='fruit-image' />
             <h4>Bananas</h4>
           </div>
         </div>
         <div className='fruit-item'>
           <div className='fruit-content'>
-            <img src={pineapple} alt="Passion Fruit" className='fruit-image' />
+            <img src={passion} alt="Passion Fruit" className='fruit-image' />
             <h4>Passion Fruits</h4>
           </div>
         </div>

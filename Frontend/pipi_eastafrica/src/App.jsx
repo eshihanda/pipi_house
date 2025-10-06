@@ -9,6 +9,7 @@ import AboutPage from './Pages/AboutPage'
 import FruitsPage from './Pages/FruitsPage'
 import Footer from './Components/Footer'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
 const App = () => {
   return (
     <Router>
@@ -28,13 +29,7 @@ const App = () => {
               <ContactPage />
             </div>} 
         />
-        <Route path='/about-us'
-          element={
-            <div>
-              <CerealsPage />
-            </div>} 
-        />
-        <Route path='/about' 
+        <Route path='/about-us' 
           element={
             <div>
               <AboutPage />

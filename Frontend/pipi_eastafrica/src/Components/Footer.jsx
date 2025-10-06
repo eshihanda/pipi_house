@@ -1,35 +1,62 @@
 import React from 'react'
+import logo from '../assets/pip-logo.png'
 import '../Styles/Footer.css'
 
 const Footer = () => {
   return (
-    <footer className='mt-3 pt-5 pb-3 text-white footer' style={{backgroundColor: '#556B2F'}}>
-        <div className='container'>
-            <div className='row text-center text-md-start'>
-                <div className='col-md-4 mb-4'>
-                    <h1 className='footer-brand'>Pipi <span>House</span></h1>
-                    <p> <i>.Farming since the 2000s.</i></p>
+    <footer className='footer'>
+        <div className='footer-container'>
+            <div className='footer-main'>
+                {/* Logo Section */}
+                <div className='footer-section logo-section'>
+                    <img src={logo} alt="Pipi House Logo" className='footer-logo' />
+                    <p className='footer-description'>
+                        Your trusted source for fresh tropical fruits, organic legumes, and quality vegetables.
+                    </p>
                 </div>
-                <div className="col-md-4 mb-4">
-                    <h5 className="footer-heading">Quick Links</h5>
-                    <ul className="list-unstyled">
+                
+                {/* Quick Links Section */}
+                <div className='footer-section'>
+                    <h5 className='footer-heading'>Quick Links</h5>
+                    <ul className='footer-links'>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#products">Our Products</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#faq">FAQs</a></li>
                     </ul>
                 </div>
-                <div className='col-md-4 mb-4'>
+                
+                {/* Contact Us Section */}
+                <div className='footer-section'>
                     <h5 className='footer-heading'>Contact Us</h5>
-                    <p>Email: <a href="mailto:info@pipihouse.com">info@pipihouse.com</a></p>
-                    <p>Phone: +254 721 840 512</p>
-                    <p>Location: Nairobi, Kenya</p>
+                    <div className='contact-details'>
+                        <div className='contact-item'>
+                            <span className='contact-label'>Email:</span>
+                            <a href="mailto:info@pipihouse.com">info@pipihouse.com</a>
+                        </div>
+                        <div className='contact-item'>
+                            <span className='contact-label'>Phone:</span>
+                            <span>+254 721 840 512</span>
+                        </div>
+                        <div className='contact-item'>
+                            <span className='contact-label'>Location:</span>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <hr className='border-success'/>
-            <p className='text-center mb-2'>  © {new Date().getFullYear()} PipiHouse. All rights reserved.</p>
-            <p className='text-center'>Handcrafted by yours truly; Monica and the team</p>
+            <div className='footer-divider'></div>
+            
+            {/* Bottom Section */}
+            <div className='footer-bottom'>
+                <p className='footer-copyright'>
+                    © {new Date().getFullYear()} PipiHouse. All rights reserved.
+                </p>
+                <p className='footer-tagline'>
+                    Handcrafted by yours truly; Monica and the team
+                </p>
+            </div>
         </div>
     </footer>
   )

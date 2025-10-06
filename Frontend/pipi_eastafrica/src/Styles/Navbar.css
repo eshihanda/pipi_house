@@ -1,11 +1,17 @@
 .nav-link-custom {
-    color: white;
+    color: rgb(37, 30, 30);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1.20rem;
+}
+#products-dropdown{
+    color: #251e1e;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 nav-link-custom:hover,
 .dropdown-menu .dropdown-item:hover {
-    color:#FFD700;
+    color:#1c1c1b;
 }
 .custom-dropdown .dropdown-menu {
   background-color: #556B2F;
@@ -16,4 +22,14 @@ nav-link-custom:hover,
 .custom-dropdown .dropdown-item {
   color: #fff;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link-custom {
+        font-size: 1rem;
+    }
+    #products-dropdown{
+        font-size: 1rem;
+    }
+  
 }

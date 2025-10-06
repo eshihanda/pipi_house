@@ -58,7 +58,6 @@ function AboutPage() {
           ))}
         </div>
       </div>
-
     </div>
   )
 }

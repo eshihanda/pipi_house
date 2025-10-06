@@ -1,12 +1,15 @@
 import React from 'react'
 import {Navbar, Nav, Container, Button, NavDropdown} from 'react-bootstrap';
+import logo from '../assets/pip-logo.png';
 import '../Styles/Navbar.css';
 const TopNavbar = () => {
   return (
-    <Navbar expand= 'lg' style={{backgroundColor: '#556B2F'}} variant='dark'>
+    <Navbar expand= 'lg' className="py-0"  style={{backgroundColor: '#e0f2c0ff'}} variant='light'>
       <Container>
         {/* Logo side */}
-        <Navbar.Brand href='/'>Pipi</Navbar.Brand>
+        <Navbar.Brand href='/'>
+          <img src={logo} alt="Pipi Logo" style={{ height: '50px'}} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls= 'main-navbar' />
         <Navbar.Collapse id='main-navbar'>
           <Nav className='mx-auto'>
@@ -17,12 +20,12 @@ const TopNavbar = () => {
               <NavDropdown.Item href='/products/legumes'>Legumes</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/contact' className='nav-link-custom'>Contact</Nav.Link>
-            <Nav.Link href='/about' className='nav-link-custom'>About Us</Nav.Link>
+            <Nav.Link href='/about-us' className='nav-link-custom'>About Us</Nav.Link>
           </Nav>
           <Nav className='ms-auto'>    
             <Button href='/products' className='px-3 py-2 fw-semibold' 
-            style={{borderRadius: '20px', backgroundColor:'#DAA520', border: 'none', color: '#333'}}>
-              Shop Now
+            style={{borderRadius: '10px', backgroundColor:'#DAA520', border: 'none', color: '#333', padding: '0px 20px', fontWeight: '200', fontSize: '1.1rem'}}>
+              Our Products
             </Button>
           </Nav>
         </Navbar.Collapse>

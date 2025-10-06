@@ -1,3 +1,5 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Styles/HeroSection.css'
 
 function HeroSection() {
@@ -22,13 +24,18 @@ function HeroSection() {
         <div className="hero-section">
             <div className="hero-img">
                 <img src="./herobg.jpg" alt="herosection image" />
-                <div className='hero-text'>
-                    <p>
-                        <span className='hero-text-bold'>FROM OUR FARMS TO THE WORLD</span>
-                        <span className='hero-text-small'>
-                            We specialize in the exportation of high-quality cereals and fresh fruits, ensuring international standards, timely delivery, and farm-to-market transparency.
-                        </span>
-                    </p>
+                <div className='hero-text-overlay'>
+                    <div className='hero-text-content'>
+                        <p className='hero-text'>
+                            <span className='hero-text-bold'>FROM OUR FARMS TO THE WORLD</span>
+                            <span className='hero-text-small'>
+                                We specialize in the exportation of high-quality cereals and fresh fruits, ensuring international standards, timely delivery, and farm-to-market transparency.
+                            </span>
+                        </p>
+                        <Link to="/about-us" className="hero-cta-button">
+                            Learn More About Us
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="offers">

@@ -30,7 +30,7 @@ const App = () => {
         />
         <Route path='/about-us'
           element={
-            <div className='container mt-4'>
+            <div>
               <AboutPage />
             </div>} 
         />

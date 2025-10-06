@@ -1,0 +1,96 @@
+
+.contact-hero-section {
+  width: 100%;
+  min-height: 85vh;
+  overflow: hidden;
+}
+
+.contact-hero-section .row {
+  min-height: 85vh;
+}
+
+.contact-text {
+  background-color: #F0E68C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 0;
+}
+
+.btn-success {
+  background-color: #556B2F;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #6B8E23;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-hero-section {
+    min-height: auto;
+  }
+
+  .contact-text {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .contact-image {
+    height: 40vh;
+  }
+}
+/* Style for the contact information and contact form */
+.contact-section {
+  background-color: #fdfcf3;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  color: #556B2F;
+}
+
+.contact-info ul li i {
+  font-size: 1.2rem;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #556B2F;
+  box-shadow: 0 0 5px rgba(85, 107, 47, 0.3);
+}
+
+.contact-form .btn-success {
+  background-color: #556B2F;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-success:hover {
+  background-color: #6B8E23;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center;
+  }
+  .contact-form {
+    text-align: center;
+  }
+}

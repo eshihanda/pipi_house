@@ -29,20 +29,20 @@
 }
 
 .fruit-item{
-	border-radius: 10px;
+	border-radius: 12px;
 	overflow: hidden;
 	cursor: pointer;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease-in-out;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 	display: flex;
-	padding: 15px;
+	padding: 0px;
 	flex-direction: column;
 	background: white;
 }
 
 .fruit-item:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	transform: translateY(-8px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);;
 }
 
 .fruit-content{
@@ -52,22 +52,40 @@
 }
 
 .fruit-image{
-	height: 350px;
+	height: 250px;
 	width: 100%;
 	display: block;
 	object-fit: cover;
 	object-position: center; 
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }
 
 .fruit-item h4 {
-	padding: 15px 10px;
+	padding: 18px 20px;
 	text-align: start;
 	font-size: 1.5rem;
-	font-weight: 400;
+	font-weight: 600;
 	color: #556B2F;
 	margin: 0;
-	background: white;
+	line-height: 1.2;
+	border-top: 1px solid #eee;
 }
+.fruit-item p.product-detail {
+    padding: 0 20px 18px 20px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #888;
+    font-weight: 400;
+}
+.fruit-item p.product-detail {
+    padding: 0 20px 18px 20px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #888;
+    font-weight: 400;
+}
+
 
 .back-link {
 	margin: 40px 0;

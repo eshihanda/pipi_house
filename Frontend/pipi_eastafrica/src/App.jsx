@@ -7,8 +7,9 @@ import CerealsPage from './Pages/CerealsPage'
 import LegumesPage from './Pages/LegumesPage'
 import AboutPage from './Pages/AboutPage'
 import FruitsPage from './Pages/FruitsPage'
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Footer from './Components/Footer'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
 const App = () => {
   return (
     <Router>
@@ -28,7 +29,7 @@ const App = () => {
               <ContactPage />
             </div>} 
         />
-        <Route path='/about-us'
+        <Route path='/about-us' 
           element={
             <div>
               <AboutPage />

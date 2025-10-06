@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Styles/About.css'
-import Footer from '../Components/Footer'
 
 function AboutPage() {
   const services = [

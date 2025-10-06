@@ -52,3 +52,23 @@
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 40px 15px;
+  }
+  .faq-section h2 {
+    font-size: 1.8rem;
+  }
+  .accordion-body p{
+    font-size: 0.95rem;
+    padding: 10px 15px;
+  }
+  .farmer-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 459px;
+    border: 1px solid red;
+  }
+}

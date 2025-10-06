@@ -1,5 +1,5 @@
 import React from 'react'
-import farmer from '../Assets/farmer.jpeg'
+import farmer from '../assets/farmer.png'
 import '../Styles/Faq.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
@@ -14,8 +14,8 @@ const Faq = () => {
       </div>
 
       <div className='row my-5 g-5 justify-content-around align-items-center'>
-        <div className='col-6 col-lg-4'>
-          <img src={farmer} className='img-fluid rounded' alt='fresh beans from farm' />
+        <div className='col-12 col-lg-5'>
+          <img src={farmer} className='farmer-img img-fluid rounded' alt='fresh beans from farm' />
         </div>
 
         <div className='col-lg-6'>

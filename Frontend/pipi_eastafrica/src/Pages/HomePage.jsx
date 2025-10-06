@@ -4,14 +4,15 @@ import Faq from '../Components/Faq'
 import Footer from '../Components/Footer'
 import ProductExplorer from '../Components/product-explorer'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Testimonials from '../Components/Testimonials'
 
 const HomePage = () => {
   return (
     <div>
         <HeroSection />
         <ProductExplorer />
+        <Testimonials />
         <Faq />
-        <Footer />
     </div>
   )
 }

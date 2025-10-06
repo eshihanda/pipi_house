@@ -36,7 +36,7 @@ const ProductExplorer = () => {
 					<div className="category-image" style={{backgroundImage: `url(${vegetables})`}}>
 						<div className="category-overlay">
 							<div className="category-content">
-								<h3>Fresh Vegetables</h3>
+								<h3>Premium Cereals</h3>
 								<p>Locally sourced, organic, and nutrient-rich.</p>
 							</div>
 						</div>

@@ -7,6 +7,7 @@ import CerealsPage from './Pages/CerealsPage'
 import LegumesPage from './Pages/LegumesPage'
 import AboutPage from './Pages/AboutPage'
 import FruitsPage from './Pages/FruitsPage'
+import Footer from './Components/Footer'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 const App = () => {
   return (
@@ -29,13 +30,13 @@ const App = () => {
         />
         <Route path='/about-us'
           element={
-            <div className='container mt-4'>
+            <div>
               <CerealsPage />
             </div>} 
         />
         <Route path='/about' 
           element={
-            <div className='container mt-4'>
+            <div>
               <AboutPage />
             </div>} 
         />
@@ -58,6 +59,7 @@ const App = () => {
             </div>} 
         />
       </Routes>
+      <Footer />
     </Router>
   )
 }

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../Styles/FruitsPage.css'
 import pineapple from '../assets/pineapple(2).jpeg';
 import avocados from '../assets/avocados(2).jpeg';
@@ -16,125 +17,152 @@ import groundnuts from '../assets/groundnuts.jpeg';
 import peanuts from '../assets/peanuts.jpeg';
 import passion from '../assets/passion-fruit.webp';
 
-import { Link } from 'react-router-dom'
+const PRODUCTS_DATA = [
+  {
+    id: 'pineapple',
+    name: 'Pineapples',
+    image: pineapple,
+    description: 'A Grade Queen variety, fresh for export.',
+  },
+  {
+    id: 'mangoes',
+    name: 'Mangoes',
+    image: mangoes,
+    description: 'Sweet and juicy Alphonso and Kent varieties.',
+  },
+  {
+    id: 'avocados',
+    name: 'Avocados',
+    image: avocados,
+    description: 'Hass and Fuerte varieties, ideal for long transit.',
+  },
+  {
+    id: 'bananas',
+    name: 'Bananas',
+    image: bananas,
+    description: 'Cavendish and Red varieties, excellent quality.',
+  },
+  {
+    id: 'passion-fruits',
+    name: 'Passion Fruits',
+    image: passion,
+    description: 'Purple and yellow varieties, strong flavour.',
+  },
+  {
+    id: 'cranberry-beans',
+    name: 'Cranberry Beans',
+    image: cranberryBeans,
+    description: 'High protein content, perfect for soups and stews.',
+  },
+  {
+    id: 'kazuri-beans',
+    name: 'Kazuri Beans',
+    image: kazuriBeans,
+    description: 'Premium quality beans, rich in nutrients.',
+  },
+  {
+    id: 'black-beans',
+    name: 'Black Beans',
+    image: blackBeans,
+    description: 'Protein-rich legumes, ideal for various dishes.',
+  },
+  {
+    id: 'yellow-beans',
+    name: 'Yellow Beans',
+    image: yellowBeans,
+    description: 'Mild flavor, great for salads and side dishes.',
+  },
+  {
+    id: 'kidney-beans',
+    name: 'Kidney Beans',
+    image: kidneyBeans,
+    description: 'Classic beans for chili and traditional meals.',
+  },
+  {
+    id: 'navy-beans',
+    name: 'Navy Beans',
+    image: navyBeans,
+    description: 'Small white beans, perfect for baked beans.',
+  },
+  {
+    id: 'cashewnuts',
+    name: 'Cashewnuts',
+    image: cashewnuts,
+    description: 'Premium quality cashews, rich and creamy.',
+  },
+  {
+    id: 'yellow-maize',
+    name: 'Yellow Maize',
+    image: yellowMaize,
+    description: 'High-quality maize for various applications.',
+  },
+  {
+    id: 'groundnuts',
+    name: 'Groundnuts',
+    image: groundnuts,
+    description: 'Fresh groundnuts, excellent for oil and snacks.',
+  },
+  {
+    id: 'peanuts',
+    name: 'Peanuts',
+    image: peanuts,
+    description: 'Crunchy peanuts, perfect for roasting.',
+  },
+];
 
+const ITEMS_PER_LOAD = 6;
 
 const FruitsPage = () => {
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_LOAD);
+  const visibleProducts = PRODUCTS_DATA.slice(0, visibleCount);
+
+  const hasMore = visibleCount < PRODUCTS_DATA.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount((prevCount) => prevCount + ITEMS_PER_LOAD);
+  };
+
   return (
     <div className='fruits-page'>
       <div className='header'>
         <h2 className='header-title'>Our Products</h2>
       </div>
+      
       <div className='container'>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={pineapple} alt="Pineapple" className='fruit-image' />
-            <h4>Pineapples</h4>
+        {visibleProducts.map((product) => (
+          <div className='fruit-item' key={product.id}>
+            <div className='fruit-content'>
+              <img 
+                src={product.image} 
+                alt={product.name} 
+                className='fruit-image' 
+              />
+              <h4>{product.name}</h4>
+              <p className="product-detail">{product.description}</p> 
+            </div>
           </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={mangoes} alt="Mangoes" className='fruit-image' />
-            <h4>Mangoes</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={avocados} alt="Avocado" className='fruit-image' />
-            <h4>Avocados</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={pineapple} alt="Banana" className='fruit-image' />
-            <h4>Bananas</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={bananas} alt="Banana" className='fruit-image' />
-            <h4>Bananas</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={passion} alt="Passion Fruit" className='fruit-image' />
-            <h4>Passion Fruits</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={cranberryBeans} alt="Cranberry Beans" className='fruit-image' />
-            <h4>Cranberry Beans</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={kazuriBeans} alt="Kazuri Beans" className='fruit-image' />
-            <h4>Kazuri Beans</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={blackBeans} alt="Black Beans" className='fruit-image' />
-            <h4>Black Beans</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={yellowBeans} alt="Yellow Beans" className='fruit-image' />
-            <h4>Yellow Beans</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={kidneyBeans} alt="Kidney Beans" className='fruit-image' />
-            <h4>Kidney Beans</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={navyBeans} alt="Navy Beans" className='fruit-image' />
-            <h4>Navy Beans</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={cashewnuts} alt="cashewnuts" className='fruit-image' />
-            <h4>Cashewnuts</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={yellowMaize} alt="Yellow Maize" className='fruit-image' />
-            <h4>Yellow Maize</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={groundnuts} alt="Groundnuts" className='fruit-image' />
-            <h4>Groundnuts</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={peanuts} alt="Peanuts" className='fruit-image' />
-            <h4>Peanuts</h4>
-          </div>
-        </div>
-        <div className='fruit-item'>
-          <div className='fruit-content'>
-            <img src={groundnuts} alt="Groundnuts" className='fruit-image' />
-            <h4>Groundnuts</h4>
-          </div>
-        </div>
+        ))}
       </div>
       
       <div className='back-link'>
-        <Link to="/">Back to home</Link>
+        {hasMore ? (
+          <button 
+            onClick={handleLoadMore}
+            className="product-load-button"
+          >
+            See More
+          </button>
+        ) : (
+          <Link 
+            to="/"
+            className="product-load-button"
+          >
+            Back to Home
+          </Link>
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FruitsPage
+export default FruitsPage;

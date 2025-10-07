@@ -16,7 +16,6 @@ p{
     padding: 0 40px;
 }
 
-/* Main Footer Grid */
 .footer-main {
     display: grid;
     grid-template-columns: 2fr 1fr 1.5fr;
@@ -121,11 +120,10 @@ p{
     color: #FFD700;
 }
 
-/* Divider */
 .footer-divider {
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
-    margin: 30px 0 20px;
+    background: #0a0a0a;
+    margin: 12px 0 10px;
 }
 
 .footer-bottom {
@@ -169,12 +167,14 @@ p{
         max-width: 200px;
         text-align: center;
         align-items: center;
+        display: none;
     }
 
     .footer-logo {
         height: 30px;
         width: auto;
         margin-bottom: 15px;
+        display: none;
     }
 
     .footer-heading {

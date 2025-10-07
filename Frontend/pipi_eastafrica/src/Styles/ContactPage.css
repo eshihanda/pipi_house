@@ -1,52 +1,114 @@
 
 .contact-hero-section {
   width: 100%;
-  min-height: 85vh;
+  min-height: 70vh;
   overflow: hidden;
 }
 
-.contact-hero-section .row {
-  min-height: 85vh;
+.contact-hero-row {
+  min-height: 70vh;
+}
+.contact-text-wrapper {
+  background: linear-gradient(135deg, #F5F5DC 0%, #F0E68C 100%);
+  display: flex;
+  align-items: center;
+  padding: 60px;
+
 }
 
-.contact-text {
-  background-color: #F0E68C;
+.contact-text-content {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #556B2F;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+
+.contact-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 35px;
+}
+.brand-highlight {
+  color: #556B2F;
+  font-weight: 600;
+}
+.contact-actions {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  gap: 25px;
+}
+.btn-about {
+  background-color: #556B2F;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: inline-block;
+  width: fit-content;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(85, 107, 47, 0.2);
 }
 
+.btn-about:hover {
+  background-color: #6B8E23;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(85, 107, 47, 0.3);
+  color: white;
+}
+.contact-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.phone-label {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+.phone-number {
+  font-size: 1.5rem;
+  color: #556B2F;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.contact-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 .contact-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  border-radius: 0;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.btn-success {
-  background-color: #556B2F;
-  border: none;
-  transition: background-color 0.3s ease;
+.contact-image-wrapper:hover .contact-image {
+  transform: scale(1.05);
 }
 
-.btn-success:hover {
-  background-color: #6B8E23;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .contact-hero-section {
-    min-height: auto;
+  .contact-text-wrapper {
+    padding: 50px 40px;
   }
 
-  .contact-text {
-    padding: 2rem;
-    text-align: center;
+  .contact-heading {
+    font-size: 2.2rem;
   }
 
-  .contact-image {
-    height: 40vh;
+  .contact-description {
+    font-size: 1.1rem;
   }
 }
 /* Style for the contact information and contact form */

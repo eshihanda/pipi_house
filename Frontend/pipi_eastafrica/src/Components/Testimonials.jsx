@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Testimonials.css'; // We'll create this CSS file
+import '../Styles/Testimonials.css';
 
 const Testimonials = () => {
   const testimonialsData = [

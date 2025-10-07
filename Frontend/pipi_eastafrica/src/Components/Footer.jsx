@@ -19,10 +19,9 @@ const Footer = () => {
                 <div className='footer-section'>
                     <h5 className='footer-heading'>Quick Links</h5>
                     <ul className='footer-links'>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#products">Our Products</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/products">Our Products</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
                 

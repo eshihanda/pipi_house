@@ -9,10 +9,10 @@ import vegetables from '../assets/cashewnuts.jpeg';
 const ProductExplorer = () => {
 	return (
 		<div className="product-explorer">
-			<h2>Explore Our Products</h2>
-			<p>Explore our diverse range of products tailored for your needs.</p>
+			<h2 className="fade-in-up">Explore Our Products</h2>
+			<p className="fade-in-up delay-1">Explore our diverse range of products tailored for your needs.</p>
 			<div className="product-categories">
-				<Link to="products/fruits" className="category-card">
+				<Link to="products/fruits" className="category-card slide-in-up delay-2">
 					<div className="category-image" style={{backgroundImage: `url(${tropicalFruits})`}}>
 						<div className="category-overlay">
 							<div className="category-content">
@@ -22,7 +22,7 @@ const ProductExplorer = () => {
 						</div>
 					</div>
 				</Link>
-				<Link to="products/legumes" className="category-card">
+				<Link to="products/legumes" className="category-card slide-in-up delay-3">
 					<div className="category-image" style={{backgroundImage: `url(${legumes})`}}>
 						<div className="category-overlay">
 							<div className="category-content">
@@ -32,7 +32,7 @@ const ProductExplorer = () => {
 						</div>
 					</div>
 				</Link>
-				<Link to="products/Cereals" className="category-card">
+				<Link to="products/Cereals" className="category-card slide-in-up delay-4">
 					<div className="category-image" style={{backgroundImage: `url(${vegetables})`}}>
 						<div className="category-overlay">
 							<div className="category-content">

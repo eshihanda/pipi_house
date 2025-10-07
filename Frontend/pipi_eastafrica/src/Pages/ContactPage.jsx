@@ -17,7 +17,7 @@ const ContactHeroSection = () => {
               or simply share how our products brightened your day—we're always happy to connect with you.
             </p>
             <div className="contact-actions">
-              <a href="/about" className="btn-about">
+              <a href="/about-us" className="btn-about">
                 More About Us
               </a>
               <div className="contact-phone">

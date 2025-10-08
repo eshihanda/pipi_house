@@ -47,21 +47,22 @@ const ContactHeroSection = () => {
                 <FaEnvelope className='me-3 fs-4' />
                 <div>
                   <strong>Email:</strong>
-                  <p className="mb-0">pipihousefarm@gmail.com</p>
+                  <p className="mb-0">Pipihouseeastafrica@gmail.com</p>
                 </div>
               </li>
               <li className="mb-4 d-flex align-items-center">
                 <FaPhoneAlt className="me-3 fs-4" />
                 <div>
                   <strong>Phone:</strong>
-                  <p className="mb-0">+254721840512</p>
+                  <p className="mb-0">+254721840512, +27638983003</p>
                 </div>
               </li>
               <li className="mb-4 d-flex align-items-center">
                 <FaMapMarkerAlt className="me-3 fs-4" />
                 <div>
                   <strong>Address:</strong>
-                  <p className="mb-0">45 Green Valley Road, Nairobi, Kenya</p>
+                  <p className="mb-0">2nd floor Muranga Coffee Farmers <br />
+                  Co-operative Union - Maragwa Town</p>
                 </div>
               </li>
             </ul>

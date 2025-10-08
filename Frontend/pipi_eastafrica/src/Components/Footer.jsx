@@ -50,7 +50,7 @@ const Footer = () => {
             {/* Bottom Section */}
             <div className='footer-bottom'>
                 <p className='footer-copyright'>
-                    © {new Date().getFullYear()} PipiHouse. All rights reserved.
+                    © {new Date().getFullYear()} PipiHouseEastAfrica. All rights reserved.
                 </p>
                 <p className='footer-tagline'>
                     Handcrafted by yours truly; Monica and the team
